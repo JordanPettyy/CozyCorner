@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Corner Bakery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <style>
+      
+
+        .cute-logo {
+            width: 300px;
+            height: 300px; 
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute; 
+            top: 5px; 
+            left: 5px; 
+        }
+        
+        .cube-container {
+            display: grid;
+            row-gap: 100px;
+            column-gap: 1px;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+        }
+
+        .cube-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .cube-image {
+            width: 100%;
+            height: 400px;
+            max-width: 400px;
+            object-fit: fixed;
+            border-radius: 10px;
+        }
+
+        .cube-link {
+            display: block;
+            margin-top: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #1f1411;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   
+    <header class="main-header">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <header class="cute-header">
+        <a href="index.html">
+            <img src="pictures/test-removebg-preview.png" alt="Cozy Corner Bakery Logo" class="cute-logo">
+        </a>
+    </header>
+
+<br>
+</br>
+<br>
+</br>
+
+<section class="welcome-section">
+    <div class="text-content">
+        <h2>Come on in.....</h2>
+        <h3>get cozy</h3>
+    </div>
+    <div class="image-content">
+        <img src="pictures/coffee-png-pictures-1274.png" alt="A picture of a full cup of coffee sitting on top of coffee beans.">
+    </div>
+</section>
+
+<div class="additional-text">
+    <h2>Welcome to Cozy Corner Bakery!</h2>
+    <p>Indulge in our delightful range of freshly baked goods. From tantalizing pastries and handcrafted drinks to savory doughy delights and personalized cakes for special moments, we cater to every taste. </p>
+    <p>So sit back, get something tasty, and most importantly, get cozy.</p>
+    <a href="menu.html" class="cta-button">Order Now</a>
+</div>
+
+</section>
+
+
+
+    </section>
+
+
+    <div class="cube-container">
+
+        <div class="cube-section">
+            <img src="pictures/bakery.jpg" alt="Menu" class="cube-image">
+            <a href="menu.html" class="cube-link">View Menu</a>
+        </div>
+
+        <div class="cube-section">
+            <img src="pictures/buttercroissant.jpg" alt="Contact Us" class="cube-image">
+            <a href="contact us.html" class="cube-link">Contact Us</a>
+        </div>
+
+        <div class="cube-section">
+            <img src="pictures/icedpumpkinspicealmondbread.jpg" alt="About Us" class="cube-image">
+            <a href="about us.html" class="cube-link">About Us</a>
+        </div>
+
+        <div class="cube-section">
+            <img src="pictures/icedcoffee.jpg" alt="Catering" class="cube-image">
+            <a href="catering.html" class="cube-link">Catering</a>
+        </div>
+</div>
+
+<footer>
+    <script src="script.js"></script>
+    <section class="newsletter-section">
+      <h2 class="sub-newsletter">Subscribe To Our Newsletter For All Of Our Latest Updates!</h2>
+      <form id="newsletterForm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">Subscribe</button>
+          <p id="confirmationMessage"></p>
+      </form> 
+
+
+      <p class="cozy-corner">&copy; 2023 Cozy Corner Bakery. All rights reserved.</p>
+     
+  </footer>
+
+</body>
+</html>
