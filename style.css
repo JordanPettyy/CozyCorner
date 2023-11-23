@@ -231,7 +231,9 @@ h3 {
 .image-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; 
+    border-radius: 8px;
+    /* EDITED, added max width */
+    max-width: 200px;
     max-height: 300px; 
 }
 
