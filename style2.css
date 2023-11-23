@@ -257,13 +257,13 @@ color:rgb(68, 54, 45);
 .center-image {
     text-align: center;
     width: 30%; 
-    margin: 50px; 
+    margin: 5px; 
 }
 
 .center-image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    max-height: 300px;
+    max-height: 200px;
 }
 
