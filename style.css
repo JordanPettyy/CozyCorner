@@ -232,8 +232,7 @@ h3 {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    /* EDITED, added max width */
-    max-width: 200px;
+    max-width: 300px;
     max-height: 300px; 
 }
 
