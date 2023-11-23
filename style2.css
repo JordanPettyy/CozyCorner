@@ -253,10 +253,11 @@ color:rgb(68, 54, 45);
     margin-top: -300px;
 }
 
+/* EDITED */
 .center-image {
     text-align: center;
     width: 30%; 
-    margin: 5px; 
+    margin: 50px; 
 }
 
 .center-image img {
