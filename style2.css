@@ -266,3 +266,13 @@ color:rgb(68, 54, 45);
     max-height: 200px;
 }
 
+@media only screen and (max-width: 600px) {
+
+
+    .center-images {
+        margin-top: -50px;
+    }
+
+    .sweet-treats-heading {
+        margin-top: -50px;
+    }
