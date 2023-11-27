@@ -6,31 +6,94 @@
     <title>Cozy Corner Bakery</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
+    <style>
+           .mobile-only-image {
+            display: none; /* Hide by default */
+        }
+   
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 16px; /* Adjust font size for better readability on small screens */
+            }
 
-<header class="main-header">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="catering.html">Catering</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+            .cute-logo {
+                max-width: 100px;
+                max-height: 100px;
+                margin-top: 80px;
 
-<header class="cute-header">
-    <a href="index.html">
-        <img src="pictures/test-removebg-preview.png" alt="Cozy Corner Bakery Logo" class="cute-logo">
-    </a>
+            }
 
+            h1.contact {
+                font-size: 30px; /* Adjust heading font size for small screens */
+            }
+
+            .about-us-container,
+            .second-about-us-container {
+                flex-direction: column; /* Stack containers vertically on small screens */
+                align-items: center;
+            }
+
+            .about-us-image-container img,
+            .second-about-us-image-container img {
+                max-width: 100%; /* Make images responsive within their containers */
+                height: auto;
+                border-radius: 8px;
+                max-height: 300px; /* Limit max height for better display on small screens */
+            }
+
+            .about-us-text-container,
+            .second-about-us-text-container {
+                text-align: center; /* Center text on small screens */
+                max-width: 100%;
+                margin-top: 20px; /* Add some space between image and text on small screens */
+            }
+
+            .mobile-only-image {
+                display: block; 
+                max-width: 100%;
+                max-width: 250px;
+                border-radius: 8px; 
+                max-height: 250px;
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 20px;
+                
+            }
+
+            .second-about-us-image-container{
+                display: none;
+            }
+        }
+    </style>
+</head>
 <body>
+
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="cute-header">
+        <a href="index.html">
+            <img src="pictures/test-removebg-preview.png" alt="Cozy Corner Bakery Logo" class="cute-logo">
+        </a>
+    </header>
 
     <h1 class="contact">About Us</h1>
     <hr>
+
     <div class="about-us-container">
         <div class="about-us-image-container">
             <img src="pictures/aboutusimage.webp" alt="A picture of bread stacked up on a display shelf.">
@@ -39,60 +102,63 @@
             <p class="about-us-text">
                 Welcome to Cozy Corner, where every delightful creation is a testament to our passion 
                 for crafting moments of comfort and joy. Nestled in the heart of the community, our bakery
-                 is more than just a haven for one-of-a-kind treats—it's a reflection of our commitment to 
-                 perfecting every bite with a touch of love. From the warm aroma of freshly baked goods to 
-                 the inviting ambiance, Cozy Corner is a sacred-like place where friends, families, and even 
-                 strangers gather together to enjoy a moment of peace within our bakery.
+                is more than just a haven for one-of-a-kind treats—it's a reflection of our commitment to 
+                perfecting every bite with a touch of love. From the warm aroma of freshly baked goods to 
+                the inviting ambiance, Cozy Corner is a sacred-like place where friends, families, and even 
+                strangers gather together to enjoy a moment of peace within our bakery.
             </p>
         </div>
     </div>
 
+<img src="pictures/aboutusimage2.webp" class="mobile-only-image">
+
+
     <div class="second-about-us-container">
-            <div class="second-about-us-text-container">
-                <p class="about-us-text"> Our story began with a simple, yet honest idea: to create a place
-                     that feels like home, where each bite taken is almost a like a teleportation machine 
-                     taking you back in time. As bakers with a shared love for the artistry of pastries, we embarked 
-                     on a journey to curate a menu that combines traditional techniques with innovative 
-                     flavors. Each pastry, bun, and drink created at Cozy Corner is an act of love,
-                      handcrafted with the purest ingredients to ensure that every bite is a moment 
-                      of utter delight.
-                </p>
-            </div>
-            <div class="second-about-us-image-container">
+        <div class="second-about-us-text-container">
+            <p class="about-us-text"> 
+                Our story began with a simple, yet honest idea: to create a place
+                that feels like home, where each bite taken is almost like a teleportation machine 
+                taking you back in time. As bakers with a shared love for the artistry of pastries, we embarked 
+                on a journey to curate a menu that combines traditional techniques with innovative 
+                flavors. Each pastry, bun, and drink created at Cozy Corner is an act of love,
+                handcrafted with the purest ingredients to ensure that every bite is a moment 
+                of utter delight.
+            </p>
+        </div>
+        <div class="second-about-us-image-container">
             <img src="pictures/aboutusimage2.webp" alt="A picture of a pair of hands kneading dough..">
         </div>
     </div>
-
 
     <div class="about-us-container">
         <div class="about-us-image-container">
             <img src="pictures/aboutusimage3.webp" alt="A picture of bread and cookies stacked up on a display shelf.">
         </div>
         <div class="about-us-text-container">
-            <p class="about-us-text">At Cozy Corner, we believe in more than just satisfying 
+            <p class="about-us-text">
+                At Cozy Corner, we believe in more than just satisfying 
                 your food cravings; we aspire to create an experience that lingers in your memory. 
                 Whether you're indulging in a flaky croissant, sipping on a perfectly brewed coffee, or
                 sharing a buttery pastry with loved ones, our goal is to make your visit a cherished one. 
                 Join us at Cozy Corner, where every pastry is one-of-a-kind, and every customer leaves with 
-                 a full stomach and happy heart.
+                a full stomach and happy heart.
             </p>
         </div>
     </div>
 
-</header>
+    <footer>
+        <script src="script.js"></script>
+        <section class="newsletter-section">
+            <h2 class="Subscribe">Subscribe To Our Newsletter For All Of Our Latest Updates!</h2>
+            <form id="newsletterForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+                <p id="confirmationMessage"></p>
+            </form> 
+            <p class="cc-footer">&copy; 2023 Cozy Corner Bakery. All rights reserved.</p>
+        </section>
+    </footer>
 
-<footer>
-    <script src="script.js"></script>
-    <section class="newsletter-section">
-      <h2 class="Subscribe">Subscribe To Our Newsletter For All Of Our Latest Updates!</h2>
-      <form id="newsletterForm">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <button type="submit">Subscribe</button>
-          <p id="confirmationMessage"></p>
-      </form> 
-     
-      <p class="cc-footer">&copy; 2023 Cozy Corner Bakery. All rights reserved.</p>
-  </footer>
 </body>
 </html>
