@@ -18,7 +18,6 @@
            max-width: 100px;
            max-height: 100px;
            margin-top: 80px;
-
        }
 
        .center-images {
@@ -41,6 +40,23 @@
         color: rgb(68, 54, 45);
         margin-top: -100px;
       }
+       .mobile-only-image {
+        display: block; 
+                max-width: 350px;
+                border-radius: 8px; 
+                max-height: 350px;
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 20px;
+                
+            }
+       @media only screen and (min-width: 601px) {
+    .desktop-only-image {
+        display: inline; 
+    }
+}
    }
 </style>
 </head>
@@ -72,13 +88,12 @@
 
     <h1 class="first-line">Thirsty? Craving something sweet? Need a salty pick-me-up?</h1>
     <h2 class="second-line">We got you covered!</h2>
-    <h2 class="second-line">testing 3</h2>
+    <h2 class="second-line">testing 4</h2>
 
     <br></br>
-
       <div class="center-images">
         <div class="center-image">
-            <img src="pictures/icedplaincoffee.png" alt="A picture of a plastic cup filled with iced coffee.">
+            <img src="pictures/icedplaincoffee.png" alt="A picture of a plastic cup filled with iced coffee." class="desktop-only-image">
         </div>
         <div class="center-image">
             <img src="pictures/chocolatecake.png" alt="A picture of a chocolate cake with a slice cut out of it.">
@@ -86,8 +101,11 @@
         <div class="center-image">
             <img src="pictures/pretzels.png" alt="A picture of a stack of pretzels.">
         </div>
-      </div>
-
+      </div> 
+     
+    
+<img src="pictures/icedplaincoffee.png" class="mobile-only-image">
+    
       <h1 class="sweet-treats-heading">Sweet Treats:</h1>
      
       <section class="food-items">
