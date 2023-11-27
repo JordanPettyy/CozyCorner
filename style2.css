@@ -268,9 +268,12 @@ color:rgb(68, 54, 45);
 
 @media only screen and (max-width: 600px) {
 
+  .center-images {
+        margin-top: -20px; /* Adjust the margin to reduce the gap */
+    }
 
-    .center-images {
-        margin-top: -50px;
+    .center-image {
+        margin: 5px;
     }
 
     .sweet-treats-heading {
