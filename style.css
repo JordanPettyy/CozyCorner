@@ -164,6 +164,9 @@ p {
 .additional-text p {
     font-size: 16px; 
     text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .additional-text .cta-button {
