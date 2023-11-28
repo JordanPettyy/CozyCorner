@@ -51,73 +51,79 @@
         }
         
  @media only screen and (max-width: 600px) {
-       body {
-           font-size: 16px;
-           overflow-x: hidden;
-       }
-       .cute-logo {
-           max-width: 100px;
-           max-height: 100px;
-           margin-top: 80px;
-       }   
-     header {
-         width: 100%;
-     }
-        .main-header {
-           width: 100%;
-       }
-     .image-content img {
-           align-items: center;
-           width: 400px;
-           height: 300px;
-     }
-     .welcome-section h2 {
-         text-align: center;
-     }
-      .welcome-section h3 {
-         text-align: center;
-     }
-     .text-content h2 {
-       text-shadow: 2px 2px 2px rgba(117, 69, 19, 0.31); 
-          font-size: 40px;
-     }
-     .text-content h3 {
-       text-shadow: 2px 2px 2px rgba(117, 69, 19, 0.31); 
-       font-size: 20px;
-     }
-     .welcome-section {
-      margin-top: -50px;
-     }
-     .cube-image {
-            width: 100%;
-            height: 200px;
-            max-width: 200px;
-            object-fit: fixed;
-            border-radius: 10px;
-        }
-       .cube-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 200px;
-            width: 200px;
-           margin-right: 80px;
-        }
-     .cube-link {
-            display: block;
-            margin-top: 1em;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 30px;
-            text-shadow: 0 0 6px rgba(0, 0, 0, 1); 
-            color:  dbd3d3;
-        }
-      .cube-section {
-            text-align: center;
-            flex: 0 0 100%;  
-            max-width: 100%;
-        }
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    
+    .cute-logo {
+        max-width: 100px;
+        max-height: 100px;
+        margin-top: 80px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .main-header {
+        width: 100%;
+    }
+
+    .image-content img {
+        align-items: center;
+        width: 400px;
+        height: 300px;
+    }
+
+    .welcome-section h2,
+    .welcome-section h3 {
+        text-align: center;
+    }
+
+    .text-content h2 {
+        text-shadow: 2px 2px 2px rgba(117, 69, 19, 0.31);
+        font-size: 40px;
+    }
+
+    .text-content h3 {
+        text-shadow: 2px 2px 2px rgba(117, 69, 19, 0.31);
+        font-size: 20px;
+    }
+
+    .welcome-section {
+        margin-top: -50px;
+    }
+
+    .cube-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: auto; 
+        width: 100%;
+        margin-right: 0; 
+        max-width: none; 
+    }
+
+    .cube-section {
+        flex: 0 0 100%; 
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .cube-image {
+        width: 100%;
+        height: auto;
+        max-width: 200px; 
+        object-fit: fixed;
+        border-radius: 10px;
+    }
+
+    .cube-link {
+        font-size: 20px; 
+    }
 }
+
     </style>
 </head>
 <body>
