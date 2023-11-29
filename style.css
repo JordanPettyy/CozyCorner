@@ -235,6 +235,7 @@ h3 {
     height: auto;
     border-radius: 8px; 
     max-height: 300px; 
+    padding-right: 10px;
 }
 
 .image-item p {
