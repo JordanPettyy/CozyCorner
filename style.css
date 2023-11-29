@@ -220,23 +220,20 @@ h3 {
     padding: 2em;
 }
 
+.image-item p {
+    color: #555;
+}
+
 .image-container {
     display: flex;
-    /* just added */
-    align-items: center;
     justify-content: space-around;
-    padding-right: -40px;
-    padding-left: -40px;
-    padding-top: -40px;
-    padding-bottom: -40px;
-    margin: 200px; 
+    margin: 80px; 
     
-    margin-right: 20px; 
 }
 
 .image-item {
     text-align: center;
-    
+    padding-right: 20px;
 }
 
 .image-item img {
@@ -244,17 +241,14 @@ h3 {
     height: auto;
     border-radius: 8px; 
     max-height: 300px; 
-}
-
-.image-item p {
-    color: #555;
+    
 }
 
 .locations {
     color:rgb(75, 56, 40);
     font-size: 26px;
     /* was left */
-    text-align: center;
+    text-align: left;
 }
 
 .bakery-text {
