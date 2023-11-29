@@ -223,7 +223,10 @@ h3 {
 .image-container {
     display: flex;
     justify-content: space-around;
-    /* was 80 */
+    padding-right: -40px;
+    padding-left: -40px;
+    padding-top: -40px;
+    padding-bottom: -40px;
     margin: 200px; 
     
     margin-right: 20px; 
