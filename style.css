@@ -222,6 +222,8 @@ h3 {
 
 .image-container {
     display: flex;
+    /* just added */
+    align-items: center;
     justify-content: space-around;
     padding-right: -40px;
     padding-left: -40px;
@@ -248,6 +250,17 @@ h3 {
     color: #555;
 }
 
+.locations {
+    color:rgb(75, 56, 40);
+    font-size: 26px;
+    /* was left */
+    text-align: center;
+}
+
+.bakery-text {
+/* was left */
+    text-align: center;
+}
 
 .contact {
 font-size: 50px;
@@ -259,17 +272,6 @@ text-shadow: 3px 3px 3px rgba(139, 69, 19, 0.5);
 
 hr {
 width: 70%;
-}
-
-.locations {
-    color:rgb(75, 56, 40);
-    font-size: 26px;
-    text-align: left;
-}
-
-.bakery-text {
-
-    text-align: left;
 }
 
 footer {
